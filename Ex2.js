@@ -115,33 +115,41 @@
 
 
 //8.
-// function joinText(words) {
-//   let out = "";
-//   for (let w of words) out += w;
-//   return out;
+// function concat(words) {
+//   let text = "";
+//   for (let i = 0; i < words.length; i++) {
+//     text = text + words[i];  
+//   }
+  
+//   return text;
 // }
-//
-// let arrNames = ["Leo", "Kira", "Maya", "Soren"];
-// let combined = joinText(arrNames);
-//
-// document.write("<p>" + combined + "</p>");
+
+// let names = ["Narato", "Luffy", "Zoro", "Sanji"];
+// let result = concat(names);
+// document.write("<p>" + result + "</p>");
 
 
 
 
 //9.
-// function getEven(list) {
-//   let ev = [];
-//   list.forEach(n => {
-//     if (n % 2 === 0) ev.push(n);
-//   });
-//   return ev;
+// function even(numbers) {
+//   let evenNumbers = [];
+
+//   for (let i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 === 0) {
+//       evenNumbers.push(numbers[i]); 
+//     }
+//   }
+
+//   return evenNumbers;
 // }
-//
-// let nums = [3, 8, 15, 4, 22];
-//
-// console.log("Original:", nums);
-// console.log("Even numbers:", getEven(nums));
+
+// let original = [2, 7, 4];
+// let evens = even(original);
+
+// console.log("Original array:", original);
+// console.log("Even numbers only:", evens);
+
 
 
 
@@ -168,6 +176,7 @@
 // console.log("Winner:", cList[0].n, "with", cList[0].v, "votes");
 // console.log("Results:");
 // cList.forEach(c => console.log(c.n + ": " + c.v + " votes"));
+
 
 
 
