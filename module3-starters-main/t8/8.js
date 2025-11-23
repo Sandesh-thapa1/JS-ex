@@ -1,0 +1,29 @@
+"use strict";
+
+const num1 = document.getElementById("num1");
+const num2 = document.getElementById("num2");
+const operation = document.getElementById("operation");
+const button = document.getElementById("start");
+const result = document.getElementById("result");
+button.addEventListener("click", function () {
+  const a = Number(num1.value);
+  const b = Number(num2.value);
+  let answer = "";
+  if (operation.value === "add") {
+    answer = a + b;
+  }
+  else if (operation.value === "sub") {
+    answer = a - b;
+  }
+  else if (operation.value === "multi") {
+    answer = a * b;
+  }
+  else if (operation.value === "div") {
+    if (b === 0) {
+      answer = "Cannot divide by zero";
+    } else {
+      answer = a / b;
+    }
+  }
+  result.textContent = "Result: " + answer;
+});
